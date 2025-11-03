@@ -118,7 +118,7 @@ const Dashboard = () => {
   <div className="flex-1">
     <CalendarWidget monthDays={monthDays} absentDays={absentDays} holidayDays={holidayDays}/>
   </div>
-  <div className="flex-1 overflow x-auto">
+  <div className="flex-1">
     <AttendanceTable monthDays={monthDays} absentDays={absentDays} />
 </div>
 </div>
