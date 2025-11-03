@@ -20,7 +20,7 @@ const Dashboard = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("const API = process.env.REACT_APP_API_URL || "https://quantunflux-backend.onrender.com/api/attendance/yearly/Aarav%20Patel";")
+    fetch("const API = process.env.REACT_APP_API_URL || "https://quantunflux-backend.onrender.com/api/attendance/yearly/Aarav%20Patel")
       .then(res => res.json())
       .then(d => {
         const formatted = d.map(item => ({
