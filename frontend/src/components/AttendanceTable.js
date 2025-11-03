@@ -15,7 +15,7 @@ const AttendanceTable = ({ monthDays, absentDays, year=2025, month=9 }) => { // 
     const right = filtered.slice(size * 2, filtered.length);
 
   const renderCol = (days) => (
-    <table className="w-full text-sm">
+    <table className="min-w-[130px] text-sm">
       <thead>
         <tr className="text-left border-b">
           <th className="py-1">Date</th>
@@ -42,7 +42,7 @@ const AttendanceTable = ({ monthDays, absentDays, year=2025, month=9 }) => { // 
     <div className="mr-3 bg-white rounded-xl shadow-md border border-gray-200 p-6">
       <h2 className="text-m font-semibold mb-4">Attendance Table</h2>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-x-auto">
         {renderCol(left)}
         {renderCol(mid)}
         {renderCol(right)}
