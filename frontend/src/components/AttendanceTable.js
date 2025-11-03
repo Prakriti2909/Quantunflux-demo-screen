@@ -39,7 +39,7 @@ const AttendanceTable = ({ monthDays, absentDays, year=2025, month=9 }) => { // 
   );
 
   return (
-  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full max-w-full overflow-hidden">
+  <div className="grid grid-cols-3 sm:grid-cols-3 gap-3 w-full max-w-full overflow-hidden">
       <h2 className="text-m font-semibold mb-4">Attendance Table</h2>
 
       <div className="grid grid-cols-3 gap-3 w-max">
