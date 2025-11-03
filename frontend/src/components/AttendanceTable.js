@@ -42,7 +42,7 @@ const AttendanceTable = ({ monthDays, absentDays, year=2025, month=9 }) => { // 
     <div className="mr-3 bg-white rounded-xl shadow-md border border-gray-200 p-6">
       <h2 className="text-m font-semibold mb-4">Attendance Table</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-x-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {renderCol(left)}
         {renderCol(mid)}
         {renderCol(right)}
